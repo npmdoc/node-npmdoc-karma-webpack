@@ -1,0 +1,775 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="http://github.com/webpack/karma-webpack">karma-webpack (v2.0.3)</a>
+</h1>
+<h4>Use webpack with karma</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.karma-webpack">module karma-webpack</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.karma-webpack.webpackPlugin.1">
+            function <span class="apidocSignatureSpan">karma-webpack.</span>webpackPlugin.1
+            <span class="apidocSignatureSpan">( webpackOptions, webpackServerOptions, webpackMiddlewareOptions, basePath, files, frameworks, customFileHandlers, emitter)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">karma-webpack.</span>webpackPlugin</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">karma-webpack.</span>webpackPlugin.1.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.karma-webpack.webpackPlugin">module karma-webpack.webpackPlugin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.karma-webpack.webpackPlugin.1">
+            function <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.</span>1
+            <span class="apidocSignatureSpan">( webpackOptions, webpackServerOptions, webpackMiddlewareOptions, basePath, files, frameworks, customFileHandlers, emitter)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.</span>0</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.karma-webpack.webpackPlugin.1">module karma-webpack.webpackPlugin.1</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.karma-webpack.webpackPlugin.1.1">
+            function <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.</span>1
+            <span class="apidocSignatureSpan">( webpackOptions, webpackServerOptions, webpackMiddlewareOptions, basePath, files, frameworks, customFileHandlers, emitter)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.karma-webpack.webpackPlugin.1.prototype">module karma-webpack.webpackPlugin.1.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.karma-webpack.webpackPlugin.1.prototype.addFile">
+            function <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.1.prototype.</span>addFile
+            <span class="apidocSignatureSpan">(entry)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.karma-webpack.webpackPlugin.1.prototype.make">
+            function <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.1.prototype.</span>make
+            <span class="apidocSignatureSpan">(compilation, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.karma-webpack.webpackPlugin.1.prototype.notifyKarmaAboutChanges">
+            function <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.1.prototype.</span>notifyKarmaAboutChanges
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.karma-webpack.webpackPlugin.1.prototype.readFile">
+            function <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.1.prototype.</span>readFile
+            <span class="apidocSignatureSpan">(file, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.karma-webpack" id="apidoc.module.karma-webpack">module karma-webpack</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.karma-webpack.webpackPlugin.1" id="apidoc.element.karma-webpack.webpackPlugin.1">
+        function <span class="apidocSignatureSpan">karma-webpack.</span>webpackPlugin.1
+        <span class="apidocSignatureSpan">( webpackOptions, webpackServerOptions, webpackMiddlewareOptions, basePath, files, frameworks, customFileHandlers, emitter)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Plugin( webpackOptions, webpackServerOptions, webpackMiddlewareOptions, basePath, files, frameworks, customFileHandlers, emitter) {
+  webpackOptions = _.clone(webpackOptions) || {};
+  webpackMiddlewareOptions = _.clone(webpackMiddlewareOptions || webpackServerOptions) || {};
+
+  var applyOptions = Array.isArray(webpackOptions) ? webpackOptions : [webpackOptions];
+  var includeIndex = applyOptions.length &gt; 1;
+
+  applyOptions.forEach(function (webpackOptions, index) {
+    // The webpack tier owns the watch behavior so we want to force it in the config
+    webpackOptions.watch = true;
+
+    // Webpack 2.1.0-beta.7+ will throw in error if both entry and plugins are not specified in options
+    // https://github.com/webpack/webpack/commit/b3bc5427969e15fd3663d9a1c57dbd1eb2c94805
+    if (!webpackOptions.entry) {
+      webpackOptions.entry = function () {
+        return {};
+      };
+    };
+
+    if (!webpackOptions.output) {
+      webpackOptions.output = {};
+    };
+
+    // When using an array, even of length 1, we want to include the index value for the build.
+    // This is due to the way that the dev server exposes commonPath for build output.
+    var indexPath = includeIndex ? index + '/' : '';
+    var publicPath = indexPath !== '' ? indexPath + '/' : '';
+
+    // Must have the common _karma_webpack_ prefix on path here to avoid
+    // https://github.com/webpack/webpack/issues/645
+    webpackOptions.output.path = '/_karma_webpack_/' + indexPath;
+    webpackOptions.output.publicPath = '/_karma_webpack_/' + publicPath;
+    webpackOptions.output.filename = '[name]';
+    if (includeIndex) {
+      webpackOptions.output.jsonpFunction = 'webpackJsonp' + index;
+    }
+    webpackOptions.output.chunkFilename = '[id].bundle.js';
+  });
+
+  this.emitter = emitter;
+  this.wrapMocha = frameworks.indexOf('mocha') &gt;= 0 &amp;&amp; includeIndex;
+  this.optionsCount = applyOptions.length;
+  this.files = [];
+  this.basePath = basePath;
+  this.waiting = [];
+
+  var compiler;
+  try {
+    compiler = webpack(webpackOptions);
+  } catch (e) {
+    console.error(e.stack || e);
+    if (e.details) {
+      console.error(e.details);
+    }
+    throw e;
+  }
+
+  var applyPlugins = compiler.compilers || [compiler];
+
+  applyPlugins.forEach(function (compiler) {
+    compiler.plugin('this-compilation', function (compilation, params) {
+      compilation.dependencyFactories.set(SingleEntryDependency, params.normalModuleFactory);
+    });
+    compiler.plugin('make', this.make.bind(this));
+  }, this);
+
+  ['invalid', 'watch-run', 'run'].forEach(function (name) {
+    compiler.plugin(name, function (_, callback) {
+      isBlocked = true;
+
+      if (typeof callback === 'function') {
+        callback();
+      }
+    });
+  });
+
+  compiler.plugin('done', function (stats) {
+    var applyStats = Array.isArray(stats.stats) ? stats.stats : [stats];
+    var assets = [];
+    var noAssets = false;
+
+    applyStats.forEach(function (stats) {
+      stats = stats.toJson();
+
+      assets.push.apply(assets, stats.assets);
+      if (stats.assets.length === 0) {
+        noAssets = true;
+      }
+    });
+
+    if (!this.waiting || this.waiting.length === 0) {
+      this.notifyKarmaAboutChanges();
+    }
+
+    if (this.waiting &amp;&amp; !noAssets) {
+      var w = this.waiting;
+
+      this.waiting = null;
+      w.forEach(function (cb) {
+        cb();
+      });
+    }
+
+    isBlocked = false;
+    for (var i = 0; i &lt; blocked.length; i++) {
+      blocked[i]();
+    }
+    blocked = [];
+  }.bind(this));
+  compiler.plugin('invalid', function () {
+    if (!this.waiting) {
+      this.waiting = [];
+    }
+  }.bind(this));
+
+  webpackMiddlewareOptions.publicPath = '/_karma_webpack_/';
+  var middleware = this.middleware = new webpackDevMiddleware(compiler, webpackMiddlewareOptions);
+
+  customFileHandlers.push({
+    urlRegex: /^\/_karma_webpack_\/.*/,
+    handler: function handler(req, res) {
+      middleware(req, res, function () {
+        res.statusCode = 404;
+        res.end('Not found'); ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.karma-webpack.webpackPlugin" id="apidoc.module.karma-webpack.webpackPlugin">module karma-webpack.webpackPlugin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.karma-webpack.webpackPlugin.1" id="apidoc.element.karma-webpack.webpackPlugin.1">
+        function <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.</span>1
+        <span class="apidocSignatureSpan">( webpackOptions, webpackServerOptions, webpackMiddlewareOptions, basePath, files, frameworks, customFileHandlers, emitter)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Plugin( webpackOptions, webpackServerOptions, webpackMiddlewareOptions, basePath, files, frameworks, customFileHandlers, emitter) {
+  webpackOptions = _.clone(webpackOptions) || {};
+  webpackMiddlewareOptions = _.clone(webpackMiddlewareOptions || webpackServerOptions) || {};
+
+  var applyOptions = Array.isArray(webpackOptions) ? webpackOptions : [webpackOptions];
+  var includeIndex = applyOptions.length &gt; 1;
+
+  applyOptions.forEach(function (webpackOptions, index) {
+    // The webpack tier owns the watch behavior so we want to force it in the config
+    webpackOptions.watch = true;
+
+    // Webpack 2.1.0-beta.7+ will throw in error if both entry and plugins are not specified in options
+    // https://github.com/webpack/webpack/commit/b3bc5427969e15fd3663d9a1c57dbd1eb2c94805
+    if (!webpackOptions.entry) {
+      webpackOptions.entry = function () {
+        return {};
+      };
+    };
+
+    if (!webpackOptions.output) {
+      webpackOptions.output = {};
+    };
+
+    // When using an array, even of length 1, we want to include the index value for the build.
+    // This is due to the way that the dev server exposes commonPath for build output.
+    var indexPath = includeIndex ? index + '/' : '';
+    var publicPath = indexPath !== '' ? indexPath + '/' : '';
+
+    // Must have the common _karma_webpack_ prefix on path here to avoid
+    // https://github.com/webpack/webpack/issues/645
+    webpackOptions.output.path = '/_karma_webpack_/' + indexPath;
+    webpackOptions.output.publicPath = '/_karma_webpack_/' + publicPath;
+    webpackOptions.output.filename = '[name]';
+    if (includeIndex) {
+      webpackOptions.output.jsonpFunction = 'webpackJsonp' + index;
+    }
+    webpackOptions.output.chunkFilename = '[id].bundle.js';
+  });
+
+  this.emitter = emitter;
+  this.wrapMocha = frameworks.indexOf('mocha') &gt;= 0 &amp;&amp; includeIndex;
+  this.optionsCount = applyOptions.length;
+  this.files = [];
+  this.basePath = basePath;
+  this.waiting = [];
+
+  var compiler;
+  try {
+    compiler = webpack(webpackOptions);
+  } catch (e) {
+    console.error(e.stack || e);
+    if (e.details) {
+      console.error(e.details);
+    }
+    throw e;
+  }
+
+  var applyPlugins = compiler.compilers || [compiler];
+
+  applyPlugins.forEach(function (compiler) {
+    compiler.plugin('this-compilation', function (compilation, params) {
+      compilation.dependencyFactories.set(SingleEntryDependency, params.normalModuleFactory);
+    });
+    compiler.plugin('make', this.make.bind(this));
+  }, this);
+
+  ['invalid', 'watch-run', 'run'].forEach(function (name) {
+    compiler.plugin(name, function (_, callback) {
+      isBlocked = true;
+
+      if (typeof callback === 'function') {
+        callback();
+      }
+    });
+  });
+
+  compiler.plugin('done', function (stats) {
+    var applyStats = Array.isArray(stats.stats) ? stats.stats : [stats];
+    var assets = [];
+    var noAssets = false;
+
+    applyStats.forEach(function (stats) {
+      stats = stats.toJson();
+
+      assets.push.apply(assets, stats.assets);
+      if (stats.assets.length === 0) {
+        noAssets = true;
+      }
+    });
+
+    if (!this.waiting || this.waiting.length === 0) {
+      this.notifyKarmaAboutChanges();
+    }
+
+    if (this.waiting &amp;&amp; !noAssets) {
+      var w = this.waiting;
+
+      this.waiting = null;
+      w.forEach(function (cb) {
+        cb();
+      });
+    }
+
+    isBlocked = false;
+    for (var i = 0; i &lt; blocked.length; i++) {
+      blocked[i]();
+    }
+    blocked = [];
+  }.bind(this));
+  compiler.plugin('invalid', function () {
+    if (!this.waiting) {
+      this.waiting = [];
+    }
+  }.bind(this));
+
+  webpackMiddlewareOptions.publicPath = '/_karma_webpack_/';
+  var middleware = this.middleware = new webpackDevMiddleware(compiler, webpackMiddlewareOptions);
+
+  customFileHandlers.push({
+    urlRegex: /^\/_karma_webpack_\/.*/,
+    handler: function handler(req, res) {
+      middleware(req, res, function () {
+        res.statusCode = 404;
+        res.end('Not found'); ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.karma-webpack.webpackPlugin.1" id="apidoc.module.karma-webpack.webpackPlugin.1">module karma-webpack.webpackPlugin.1</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.karma-webpack.webpackPlugin.1.1" id="apidoc.element.karma-webpack.webpackPlugin.1.1">
+        function <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.</span>1
+        <span class="apidocSignatureSpan">( webpackOptions, webpackServerOptions, webpackMiddlewareOptions, basePath, files, frameworks, customFileHandlers, emitter)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Plugin( webpackOptions, webpackServerOptions, webpackMiddlewareOptions, basePath, files, frameworks, customFileHandlers, emitter) {
+  webpackOptions = _.clone(webpackOptions) || {};
+  webpackMiddlewareOptions = _.clone(webpackMiddlewareOptions || webpackServerOptions) || {};
+
+  var applyOptions = Array.isArray(webpackOptions) ? webpackOptions : [webpackOptions];
+  var includeIndex = applyOptions.length &gt; 1;
+
+  applyOptions.forEach(function (webpackOptions, index) {
+    // The webpack tier owns the watch behavior so we want to force it in the config
+    webpackOptions.watch = true;
+
+    // Webpack 2.1.0-beta.7+ will throw in error if both entry and plugins are not specified in options
+    // https://github.com/webpack/webpack/commit/b3bc5427969e15fd3663d9a1c57dbd1eb2c94805
+    if (!webpackOptions.entry) {
+      webpackOptions.entry = function () {
+        return {};
+      };
+    };
+
+    if (!webpackOptions.output) {
+      webpackOptions.output = {};
+    };
+
+    // When using an array, even of length 1, we want to include the index value for the build.
+    // This is due to the way that the dev server exposes commonPath for build output.
+    var indexPath = includeIndex ? index + '/' : '';
+    var publicPath = indexPath !== '' ? indexPath + '/' : '';
+
+    // Must have the common _karma_webpack_ prefix on path here to avoid
+    // https://github.com/webpack/webpack/issues/645
+    webpackOptions.output.path = '/_karma_webpack_/' + indexPath;
+    webpackOptions.output.publicPath = '/_karma_webpack_/' + publicPath;
+    webpackOptions.output.filename = '[name]';
+    if (includeIndex) {
+      webpackOptions.output.jsonpFunction = 'webpackJsonp' + index;
+    }
+    webpackOptions.output.chunkFilename = '[id].bundle.js';
+  });
+
+  this.emitter = emitter;
+  this.wrapMocha = frameworks.indexOf('mocha') &gt;= 0 &amp;&amp; includeIndex;
+  this.optionsCount = applyOptions.length;
+  this.files = [];
+  this.basePath = basePath;
+  this.waiting = [];
+
+  var compiler;
+  try {
+    compiler = webpack(webpackOptions);
+  } catch (e) {
+    console.error(e.stack || e);
+    if (e.details) {
+      console.error(e.details);
+    }
+    throw e;
+  }
+
+  var applyPlugins = compiler.compilers || [compiler];
+
+  applyPlugins.forEach(function (compiler) {
+    compiler.plugin('this-compilation', function (compilation, params) {
+      compilation.dependencyFactories.set(SingleEntryDependency, params.normalModuleFactory);
+    });
+    compiler.plugin('make', this.make.bind(this));
+  }, this);
+
+  ['invalid', 'watch-run', 'run'].forEach(function (name) {
+    compiler.plugin(name, function (_, callback) {
+      isBlocked = true;
+
+      if (typeof callback === 'function') {
+        callback();
+      }
+    });
+  });
+
+  compiler.plugin('done', function (stats) {
+    var applyStats = Array.isArray(stats.stats) ? stats.stats : [stats];
+    var assets = [];
+    var noAssets = false;
+
+    applyStats.forEach(function (stats) {
+      stats = stats.toJson();
+
+      assets.push.apply(assets, stats.assets);
+      if (stats.assets.length === 0) {
+        noAssets = true;
+      }
+    });
+
+    if (!this.waiting || this.waiting.length === 0) {
+      this.notifyKarmaAboutChanges();
+    }
+
+    if (this.waiting &amp;&amp; !noAssets) {
+      var w = this.waiting;
+
+      this.waiting = null;
+      w.forEach(function (cb) {
+        cb();
+      });
+    }
+
+    isBlocked = false;
+    for (var i = 0; i &lt; blocked.length; i++) {
+      blocked[i]();
+    }
+    blocked = [];
+  }.bind(this));
+  compiler.plugin('invalid', function () {
+    if (!this.waiting) {
+      this.waiting = [];
+    }
+  }.bind(this));
+
+  webpackMiddlewareOptions.publicPath = '/_karma_webpack_/';
+  var middleware = this.middleware = new webpackDevMiddleware(compiler, webpackMiddlewareOptions);
+
+  customFileHandlers.push({
+    urlRegex: /^\/_karma_webpack_\/.*/,
+    handler: function handler(req, res) {
+      middleware(req, res, function () {
+        res.statusCode = 404;
+        res.end('Not found'); ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.karma-webpack.webpackPlugin.1.prototype" id="apidoc.module.karma-webpack.webpackPlugin.1.prototype">module karma-webpack.webpackPlugin.1.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.karma-webpack.webpackPlugin.1.prototype.addFile" id="apidoc.element.karma-webpack.webpackPlugin.1.prototype.addFile">
+        function <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.1.prototype.</span>addFile
+        <span class="apidocSignatureSpan">(entry)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addFile = function (entry) {
+  if (this.files.indexOf(entry) &gt;= 0) {
+    return;
+  }
+  this.files.push(entry);
+
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// do it on process.nextTick to catch changes while building
+this.waiting.push(process.nextTick.bind(process, this.readFile.bind(this, file, callback)));
+  }
+};
+
+function createPreprocesor( /* config.basePath */basePath, webpackPlugin) {
+  return function (content, file, done) {
+if (webpackPlugin.<span class="apidocCodeKeywordSpan">addFile</span>(file.path)) {
+  // recompile as we have an asset that we have not seen before
+  webpackPlugin.middleware.invalidate();
+}
+
+// read blocks until bundle is done
+webpackPlugin.readFile(path.relative(basePath, file.path), function (err, content) {
+  if (err) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.karma-webpack.webpackPlugin.1.prototype.make" id="apidoc.element.karma-webpack.webpackPlugin.1.prototype.make">
+        function <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.1.prototype.</span>make
+        <span class="apidocSignatureSpan">(compilation, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">make = function (compilation, callback) {
+  async.forEach(this.files.slice(), function (file, callback) {
+    var entry = file;
+
+    if (this.wrapMocha) {
+      entry = require.resolve('./mocha-env-loader') + '!' + entry;
+    }
+
+    var dep = new SingleEntryDependency(entry);
+
+    compilation.addEntry('', dep, path.relative(this.basePath, file).replace(/\\/g, '/'), function () {
+      // If the module fails because of an File not found error, remove the test file
+      if (dep.module &amp;&amp; dep.module.error &amp;&amp; dep.module.error.error &amp;&amp; dep.module.error.error.code === 'ENOENT') {
+        this.files = this.files.filter(function (f) {
+          return file !== f;
+        });
+        this.middleware.invalidate();
+      }
+      callback();
+    }.bind(this));
+  }.bind(this), callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.karma-webpack.webpackPlugin.1.prototype.notifyKarmaAboutChanges" id="apidoc.element.karma-webpack.webpackPlugin.1.prototype.notifyKarmaAboutChanges">
+        function <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.1.prototype.</span>notifyKarmaAboutChanges
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">notifyKarmaAboutChanges = function () {
+  // Force a rebuild
+  this.emitter.refreshFiles();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+assets.push.apply(assets, stats.assets);
+if (stats.assets.length === 0) {
+  noAssets = true;
+}
+    });
+
+    if (!this.waiting || this.waiting.length === 0) {
+this.<span class="apidocCodeKeywordSpan">notifyKarmaAboutChanges</span>();
+    }
+
+    if (this.waiting &amp;&amp; !noAssets) {
+var w = this.waiting;
+
+this.waiting = null;
+w.forEach(function (cb) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.karma-webpack.webpackPlugin.1.prototype.readFile" id="apidoc.element.karma-webpack.webpackPlugin.1.prototype.readFile">
+        function <span class="apidocSignatureSpan">karma-webpack.webpackPlugin.1.prototype.</span>readFile
+        <span class="apidocSignatureSpan">(file, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">readFile = function (file, callback) {
+  var middleware = this.middleware;
+  var optionsCount = this.optionsCount;
+
+  var doRead = function () {
+    if (optionsCount &gt; 1) {
+      async.times(optionsCount, function (idx, callback) {
+        middleware.fileSystem.readFile('/_karma_webpack_/' + idx + '/' + file.replace(/\\/g, '/'), callback);
+      }, function (err, contents) {
+        if (err) {
+          return callback(err);
+        };
+        contents = contents.reduce(function (arr, x) {
+          if (!arr) {
+            return [x];
+          };
+          arr.push(new Buffer('\n'), x);
+
+          return arr;
+        }, null);
+        callback(null, Buffer.concat(contents));
+      });
+    } else {
+      try {
+        var fileContents = middleware.fileSystem.readFileSync('/_karma_webpack_/' + file.replace(/\\/g, '/'));
+
+        callback(undefined, fileContents);
+      } catch (e) {
+        // If this is an error from `readFileSync` method, wait for the next tick.
+        // Credit #69 @mewdriller
+        if (e.code === 'ENOENT') {
+          // eslint-disable-line quotes
+          this.waiting = [process.nextTick.bind(process, this.readFile.bind(this, file, callback))];
+
+          // throw otherwise
+        } else {
+          callback(e);
+        }
+      }
+    }
+  }.bind(this);
+
+  if (!this.waiting) {
+    doRead();
+  } else {
+    // Retry to read once a build is finished
+    // do it on process.nextTick to catch changes while building
+    this.waiting.push(process.nextTick.bind(process, this.readFile.bind(this, file, callback)));
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Plugin.prototype.readFile = function (file, callback) {
+var middleware = this.middleware;
+var optionsCount = this.optionsCount;
+
+var doRead = function () {
+  if (optionsCount &gt; 1) {
+    async.times(optionsCount, function (idx, callback) {
+      middleware.fileSystem.<span class="apidocCodeKeywordSpan">readFile</span>('/_karma_webpack_/' + idx + '/'
+; + file.replace(/\\/g, '/'), callback);
+    }, function (err, contents) {
+      if (err) {
+        return callback(err);
+      };
+      contents = contents.reduce(function (arr, x) {
+        if (!arr) {
+          return [x];
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
